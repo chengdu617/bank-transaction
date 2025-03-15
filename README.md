@@ -35,7 +35,7 @@ src
 | -------------------- | ------------------- | ---------------------------------------------- |
 | SpringBoot           | Web应用开发框架      | https://spring.io/projects/spring-boot         |
 | Spring JPA           | 数据访问层             | https://spring.io/projects/spring-data-jpa/ |
-| H2 Database          | 内存数据库     | https://https://www.h2database.com/    |
+| H2 Database          | 内存数据库     | https://www.h2database.com/    |
 | Spring Cache         | 缓存            | https://github.com/spring-guides/gs-caching      |
 | Spring Validation    | 数据验证            | https://spring.io/projects/spring-boot        |
 | Docker               | 应用容器引擎        | https://www.docker.com                         |
@@ -48,7 +48,7 @@ src
 | -------------------- | ------------------- | ---------------------------------------------- |
 | SpringBoot           | Web application development framework      | https://spring.io/projects/spring-boot         |
 | Spring JPA           | Data access layer             | https://spring.io/projects/spring-data-jpa/ |
-| H2 Database          | In-memory database     | https://https://www.h2database.com/    |
+| H2 Database          | In-memory database     | https://www.h2database.com/    |
 | Spring Cache         | Caching            | https://github.com/spring-guides/gs-caching      |
 | Spring Validation    | Data validation            | https://spring.io/projects/spring-boot        |
 | Docker               | Application container engine        | https://www.docker.com                         |
