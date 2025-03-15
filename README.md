@@ -64,9 +64,9 @@ src
 
 > Docker部署 Docker Deployment
 
- 构建 Build：docker buildx build -t transaction-management:latest .
+ 构建 Build：docker buildx build -t bank-transaction:latest .
 
- 部署 Deployment：docker run -p 8080:8080 transaction-management:latest
+ 部署 Deployment：docker run -p 8080:8080 bank-transaction:latest
 
 
 ## API接口 API Interfaces
