@@ -4,7 +4,7 @@
 
 
 
-本项目是一套用于银行领域的交易管理系统，基于SpringBoot+H2+JPA实现，采用Docker容器化部署。支持对交易的新增、修改、删除和查询。整体架构采用经典MVC分层架构设计，API接口采用RESTful API设计风格。同时提供请求参数验证、业务异常处理、本地缓存机制等功能特性。最后进行了完善的单元测试和压测，保证系统的性能和稳定性。
+本项目是一套用于银行领域的交易管理系统，基于SpringBoot+H2内存数据库+JPA实现，采用Docker容器化部署。支持对交易的新增、修改、删除和查询。整体架构采用经典MVC分层架构设计，API接口采用RESTful API设计风格。同时提供请求参数验证、业务异常处理、本地缓存机制等功能特性。最后进行了完善的单元测试和压测，保证系统的性能和稳定性。
 
 This project is a transaction management system used in the banking field, implemented based on SpringBoot + H2 + JPA, and deployed in a containerized manner using Docker. It supports the creation, modification, deletion, and query of transactions. The overall architecture is designed with the classic MVC hierarchical architecture, and the API interfaces are designed in the RESTful API style. At the same time, it provides functional features such as request parameter validation, business exception handling, and local caching mechanism. Finally, comprehensive unit tests and stress tests have been carried out to ensure the performance and stability of the system.
 
