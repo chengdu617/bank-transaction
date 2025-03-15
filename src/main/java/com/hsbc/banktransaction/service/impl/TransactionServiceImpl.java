@@ -8,6 +8,8 @@ import com.hsbc.banktransaction.domain.po.Transaction;
 import com.hsbc.banktransaction.service.TransactionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -37,6 +39,7 @@ public class TransactionServiceImpl implements TransactionService {
         return transactionRepository.save(transaction);
     }
 
+    @CacheEvict(value = "transaction", key = "#id")
     public void deleteTransaction(Long id) {
         Optional<Transaction> exist = transactionRepository.findById(id);
         if(exist.isEmpty()) {
@@ -45,18 +48,20 @@ public class TransactionServiceImpl implements TransactionService {
         transactionRepository.deleteById(id);
     }
 
+    @Cacheable(value = "transaction", key = "#id")
     public Transaction getTransactionById(Long id) {
-        return transactionRepository.findById(id).orElse(null);
+        return transactionRepository.findById(id).get();
     }
 
     public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll();
     }
 
+    @CacheEvict(value = "transaction", key = "#id")
     public Transaction updateTransaction(Long id, Transaction transaction) {
-        Optional<Transaction> exist = transactionRepository.findById(transaction.getId());
+        Optional<Transaction> exist = transactionRepository.findById(id);
         if(exist.isEmpty()) {
-            throw new BizException("交易不存在，id:" + transaction.getId(), BizErrorCode.TRANSACTION_UPDATE_NOT_EXIST);
+            throw new BizException("交易不存在，id:" + id, BizErrorCode.TRANSACTION_UPDATE_NOT_EXIST);
         }
         Transaction existTransaction = exist.get();
         existTransaction.setCstAccno(transaction.getCstAccno());
