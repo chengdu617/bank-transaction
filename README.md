@@ -81,7 +81,7 @@ src
  代码覆盖率100%
  The code coverage is 100%.
  
- ![单元测试覆盖率.png](/image/单元测试覆盖率.png)
+ ![单元测试覆盖率.png](image/单元测试覆盖率.png)
 
 
 ## 压测 Stress Tests
@@ -89,13 +89,13 @@ src
  测试计划
 Test Plan
  
- ![测试计划.png](/image/测试计划.png)
+ ![测试计划.png](image/测试计划.png)
 
 
  测试结果
  Test Results
  
- ![压测报告.png](/image/压测报告.png)
+ ![压测报告.png](image/压测报告.png)
 
 
  报告
