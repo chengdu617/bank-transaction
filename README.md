@@ -74,7 +74,8 @@ src
  2. 更新交易Update a transaction
  3. 根据ID查询交易Query a transaction by ID
  4. 查询所有交易Query all transactions
- 5. 分页查询Paged query
+ 5. 删除交易Delete a transaction
+ 6. 分页查询Paged query
 
 ## 单元测试 Unit Tests
 
